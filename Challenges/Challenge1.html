@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge 1</title>
+</head>
+<body>
+<!-- Create a div tag with some text and an id named "goodbye".
+     Create a button that, when clicked, makes the text dissappear -->
+<div id = "goodbye">
+  <p>content here</p>
+</div>
+
+
+<button id = "button" onclick = "disappear()">
+  RX-80-PR
+</button>
+<button id = "button2" onclick = "appear()">
+  RX-78
+</button>
+
+<script>
+  hidd3n = false;
+
+  function disappear() {
+    document.getElementById('button').innerHTML = "MSN-06 Sazabi <3 <3 <3";
+    document.getElementById("goodbye").style.display = "none";
+  }
+
+  function appear() {
+    document.getElementById('button2').innerHTML = "RX-78-02";
+    document.getElementById("goodbye").style.display = "block";
+  }
+
+</script>
+
+</body>
+</html>
