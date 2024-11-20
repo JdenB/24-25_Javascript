@@ -2,37 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Introduction</title>
+    <title>Title</title>
 </head>
 
+
 <body>
-<p id = demo> content here</p>
 
+<p id="demo">Some content in there.</p>
 
-<button id = "cool" onmouseover = "mySecondFunction()" onclick = "myFirstFunction();">
-  click me to change text
+<button id="cool" onclick="myFirstFunction()" onmouseover="mySecondFunction()">
+  Click Me to Change the Text
 </button>
-
-
-
 <script>
-  // alert("hello world");
   /*
-  multi line comment
+   * Multi-Line Comment
    */
 
-  // single line comment
+  // Single Line Comment
+  // alert("Hello World!!");
 
-
-  function myFirstFunction() {
-    document.getElementById('demo').innerHTML = "Different content";
+  function myFirstFunction(){
+    document.getElementById('demo').innerHTML = 'Different Content';
     document.getElementById("demo").style.color = "red";
     document.getElementById("cool").style.display = "none";
   }
-  function mySecondFunction() {
-    document.getElementById('demo').style.fontSize = "35px";
-  }
 
+  function mySecondFunction(){
+    document.getElementById("demo").style.fontSize = "35px";
+
+  }
 
 </script>
 
