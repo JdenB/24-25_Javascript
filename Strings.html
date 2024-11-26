@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings</title>
+</head>
+<body>
+
+<script>
+  string = "a bunch of characters";
+
+  // to find num length of a string:
+  let length = string.length;
+
+  // to access a specific character
+  let third_letter = string.charAt(3);
+
+  // to get a substring, take a string and break it apart
+
+  /*
+  let substring = string.substring(7,17)
+  alert(substring)
+  */
+
+  //reverse my string
+  let reverse_string = ""
+  for (let index = string.length - 1; index >= 1; index --){
+    reverse_string += string.charAt(index)
+
+  }
+  alert(reverse_string)
+
+</script>
+
+
+</body>
+</html>
