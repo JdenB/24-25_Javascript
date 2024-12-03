@@ -6,8 +6,9 @@
 </head>
 <body>
 <!-- Add a button that when you click it, the background of the table changes to blue -->
-
-<table>
+<button type = "button" onclick = "backgroundChange()"> Toggle </button>
+<div>
+<table id = "table">
   <tr>
     <th>Company</th>
     <th>Contact</th>
@@ -43,6 +44,23 @@
     <td>Giovanni Rovelli</td>
     <td>Italy</td>
   </tr>
+</table>
+</div>
+<script>
+  function backgroundChange(){
+  const table = document.getElementById("table")
+    show = true;
+    if(show === true){
+      document.getElementById("table").style.backgroundColor = "red";
+      show = false;
+    }else{
+      document.getElementById("table").style.backgroundColor = "blue";
+      show = true;
+    }
+  }
+
+
+</script>
 </table>
 </body>
 </html>
