@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front</title>
+</head>
+<body>
+<div>
+  <table>
+
+    <tr>
+      <td><button type = "button" id = "7" onclick = "numpress(9)">9</button></td>
+      <td><button type = "button" id = "8" onclick = "numpress(8)">8</button></td>
+      <td><button type = "button" id = "9" onclick = "numpress(7)">7</button></td>
+    </tr>
+    <tr>
+      <td><button type = "button" id = "4" onclick = "numpress(6)">6</button></td>
+      <td><button type = "button" id = "5" onclick = "numpress(5)">5</button></td>
+      <td><button type = "button" id = "6" onclick = "numpress(4)">4</button></td>
+    </tr>
+    <tr>
+      <td><button type = "button" id = "1" onclick = "numpress(3)">3</button></td>
+      <td><button type = "button" id = "2" onclick = "numpress(2)">2</button></td>
+      <td><button type = "button" id = "3" onclick = "numpress(1)">1</button></td>
+    </tr>
+    <tr>
+      <td><button type = "button" id = "clear" onclick = "numpress(1)">clear</button></td>
+      <td><button type = "button" id = "+" onclick = "numpress(1)">+</button></td>
+      <td><button type = "button" id = "-" onclick = "numpress(1)">-</button></td>
+      <td><button type = "button" id = "/" onclick = "numpress(1)">/</button></td>
+      <td><button type = "button" id = "*" onclick = "numpress(1)">*</button></td>
+      <td><button type = "button" id = "=" onclick = "numpress(1)">=</button></td>
+    </tr>
+</table>
+</div>
+<script>
+  counter = 0;
+  function numpress(){
+    if(counter % 2  === 0){
+      alert("even " + String(counter));
+    }else{
+      alert("odd " + String(counter));
+    }
+    counter ++;
+  }
+
+</script>
+
+</body>
+</html>

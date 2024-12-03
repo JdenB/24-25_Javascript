@@ -47,16 +47,14 @@
 </table>
 </div>
 <script>
+  counter = 0;
   function backgroundChange(){
-  const table = document.getElementById("table")
-    show = true;
-    if(show === true){
-      document.getElementById("table").style.backgroundColor = "red";
-      show = false;
-    }else{
+    if(counter % 2  === 0){
       document.getElementById("table").style.backgroundColor = "blue";
-      show = true;
+    }else{
+      document.getElementById("table").style.backgroundColor = "transparent";
     }
+    counter ++;
   }
 
 
