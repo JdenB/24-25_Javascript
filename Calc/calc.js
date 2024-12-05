@@ -19,7 +19,8 @@ function calculate(event) {
     }else if (clickedValue === "C"){
         display.value = "";
     }else{
-        display.value += clickedValue;
+        // display.value += clickedValue;
+        display.value = "H";
     }
 
 }
