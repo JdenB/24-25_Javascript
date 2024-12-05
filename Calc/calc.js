@@ -1,26 +1,27 @@
+// Setup Access to HTML Elements
 const buttons = document.querySelectorAll('button');
-const display = document.querySelectorAll('.display');
+const display = document.querySelector('.display');
 
-// add listener
+// Add listener to all buttons
 buttons.forEach(
-    function(button) {
-        button.addEventListener('click', calculate);
+    function(button){
+        button.addEventListener("click", calculate);
     }
 );
-function calculate(event) {
-    // what was clicked
+
+function calculate(event){
+    // What button was clicked?
     const clickedValue = event.target.value;
 
-    if (clickedValue === "="){
-       if(display.value !== ""){
-           display.value = eval(display.value);
-
-       }
-    }else if (clickedValue === "C"){
+    if(clickedValue === "="){
+        // Is the display empty?
+        if(display.value !== ""){
+            // Calculate the value and display it
+            display.value = eval(display.value);
+        }
+    } else if(clickedValue === "C"){
         display.value = "";
     }else{
-        // display.value += clickedValue;
-        display.value = "H";
+        display.value += clickedValue;
     }
-
 }
