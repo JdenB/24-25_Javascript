@@ -1,6 +1,10 @@
 // Setup Access to HTML Elements
 const buttons = document.querySelectorAll('button');
 const display = document.querySelector('.display');
+document.getElementById("container").style.display = "block";
+document.getElementById("container").style.color = "black";
+document.getElementById("container").style.marginLeft = "auto";
+document.getElementById("container").style.marginRight = "auto";
 
 // Add listener to all buttons
 buttons.forEach(
